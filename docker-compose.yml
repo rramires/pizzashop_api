@@ -1,4 +1,4 @@
-version: '3.7'
+#version: '3.7'
 
 services:
   postgres:
@@ -7,8 +7,8 @@ services:
       - '5432:5432'
     environment:
       - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=pizzashop
+      - POSTGRES_PASSWORD=docker123
+      - POSTGRES_DB=pizzashop-db
     volumes:
       - postgres_data:/bitnami/postgresql
 

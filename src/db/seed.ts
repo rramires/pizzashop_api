@@ -54,7 +54,7 @@ console.log(chalk.yellow('✔ Created customers'))
 const [manager] = await db
   .insert(users)
   .values({
-    name: faker.person.fullName(),
+    name: 'Fulano',
     email: 'fulano@email.com',
     role: 'manager',
   })
